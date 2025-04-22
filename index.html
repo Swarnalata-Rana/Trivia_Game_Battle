@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-div">
+
+        <div id="player-section">
+            <h2 class="welcom-trivia">
+                Welcome To Trivia Game
+            </h2>
+            <div class="player-section-names">
+                <input type="text" id="input-player1-name" placeholder="Player 1 Name">
+                <input type="text" id="input-player2-name" placeholder="Player 2 Name">
+
+            </div>
+            <div>
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+
+        <div id="category-selection-section">
+            <div class="category-player-name">
+                <div id="player1-name-display"></div>
+                <div id="player2-name-display"></div>
+            </div>
+            <select id="category-dropdown">
+                <option>Music</option>
+                <option>History</option>
+                <option>Science</option>
+                <option>Geography</option>
+                <option>Sport_and_leisure</option>
+                <option>Film_and_tv</option>
+                <option>Arts_and_literature</option>
+                <option>Society_and_culture</option>
+                <option>Food_and_drink</option>
+                <option>General_knowledge</option>
+            </select>
+            <button id="select-category-button">Select Category</button>
+        </div>
+
+        <div id="no-more-categories">
+            Sorry, there is no more category.
+        </div>
+
+        <div id="question-display-section">
+            <div class="quetion-number">
+                <strong>
+                    <div id="question-number-display"></div>
+                </strong>
+                <div id="question-text"></div>
+            </div>
+            <div id="options-container" style="display: none;">
+                <div class="options">
+                    <div>
+                        <input type="radio" class="option-input" name="answer" value="option 1" />
+                        <label class="option-label"></label>
+                    </div>
+                    <div>
+                        <input type="radio" class="option-input" name="answer" value="option 2" />
+                        <label class="option-label"></label>
+                    </div>
+                    <div>
+                        <input type="radio" class="option-input" name="answer" value="option 3" />
+                        <label class="option-label"></label>
+                    </div>
+                    <div>
+                        <input type="radio" class="option-input" name="answer" value="option 4" />
+                        <label class="option-label"></label>
+                    </div>
+                </div>
+            </div>
+            <button id="next-question-button">Next Question</button>
+            <div id="player-turn">Who's trun</div>
+            <p id="score-player1">Player 1 Score: 0</p>
+            <p id="score-player2">Player 2 Score: 0</p>
+        </div>
+
+        <div id="continue-game-and-end-game-section">
+            <button id="continue-game-button">Continue</button>
+            <button id="end-game-button">End The Game</button>
+        </div>
+
+        <div id="winner-section"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
